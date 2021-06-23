@@ -86,7 +86,7 @@ app.get('/profiles',
   )
 
 app.get('/Anthony',(req,res)=>{
-  res.render('AnthonyBio')
+  res.render('./teamPages/AnthonyBio')
 })
 
 app.use('/publicprofile/:userId',

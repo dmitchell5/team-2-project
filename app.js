@@ -62,6 +62,10 @@ app.get('/mason', (req,res) => {
   res.render('./teamPages/mason')
 })
 
+app.get('/dawn', (req,res) => {
+  res.render('./dawn')
+})
+
 app.get('/testing',
   myLogger,
   isLoggedIn,

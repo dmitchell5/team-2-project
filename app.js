@@ -81,6 +81,10 @@ app.get('/profiles',
     }
   )
 
+app.get('/Anthony',(req,res)=>{
+  res.render('AnthonyBio')
+})
+
 app.use('/publicprofile/:userId',
     async (req,res,next) => {
       try {

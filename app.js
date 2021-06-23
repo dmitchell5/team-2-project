@@ -58,6 +58,10 @@ const myLogger = (req,res,next) => {
   next()
 }
 
+app.get('/mason', (req,res) => {
+  res.render('./teamPages/mason')
+})
+
 app.get('/testing',
   myLogger,
   isLoggedIn,

@@ -66,6 +66,10 @@ app.get('/dawn', (req,res) => {
   res.render('./dawn')
 })
 
+app.get('/kevin', (req,res) => {
+  res.render('./kevin')
+})
+
 app.get('/testing',
   myLogger,
   isLoggedIn,

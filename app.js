@@ -58,6 +58,10 @@ const myLogger = (req,res,next) => {
   next()
 }
 
+app.get('/jennaBio', (req, res) => {
+  res.render('jennaBio')
+})
+
 app.get('/mason', (req,res) => {
   res.render('./teamPages/mason')
 })

@@ -62,13 +62,18 @@ app.get('/jennaBio', (req, res) => {
   res.render('jennaBio')
 })
 
+app.get("/anthony", (req,res) =>{
+  res.render("./AnthonyBio")
+})
+
 app.get('/mason', (req,res) => {
-  res.render('./teamPages/mason')
+  res.render('./mason')
 })
 
 app.get('/dawn', (req,res) => {
   res.render('./dawn')
 })
+
 
 app.get('/kevin', (req,res) => {
   res.render('./kevin')

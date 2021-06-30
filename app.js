@@ -104,7 +104,7 @@ app.get('/profiles',
   )
 
 app.get('/Anthony',(req,res)=>{
-  res.render('./teamPages/AnthonyBio')
+  res.render('/AnthonyBio')
 })
 
 app.use('/publicprofile/:userId',

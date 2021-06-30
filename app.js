@@ -59,10 +59,6 @@ const myLogger = (req,res,next) => {
   next()
 }
 
-app.get('/jennaBio', (req, res) => {
-  res.render('jennaBio')
-})
-
 app.get("/anthony", (req,res) =>{
   res.render("./AnthonyBio")
 })

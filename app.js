@@ -9,11 +9,11 @@ require('dotenv').config();
 const auth = require('./config/auth.js');
 
 
-const mongoose = require( 'mongoose' );
-//mongoose.connect( `mongodb+srv://${auth.atlasAuth.username}:${auth.atlasAuth.password}@cluster0-yjamu.mongodb.net/authdemo?retryWrites=true&w=majority`);
-mongoose.connect( 'mongodb://localhost/authDemo');
-//const mongoDB_URI = process.env.MONGODB_URI
-//mongoose.connect(mongoDB_URI)
+//const mongoose = require( 'mongoose' );
+mongoose.connect( `mongodb+srv://${auth.atlasAuth.username}:${auth.atlasAuth.password}@cluster0-yjamu.mongodb.net/authdemo?retryWrites=true&w=majority`);
+//mongoose.connect( 'mongodb://localhost/authDemo');
+const mongoDB_URI = process.env.MONGODB_URI
+mongoose.connect(mongoDB_URI)
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

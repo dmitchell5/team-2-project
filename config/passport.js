@@ -38,16 +38,17 @@ module.exports = function(passport) {
     // load the auth variables
 
   //  var configAuth = require('./auth');
-  /*
+  
     const clientID = process.env.CLIENTID
     const clientSecret = process.env.CLIENTSECRET
     const callbackURL = process.env.CALLBACK
-*/
+
+/*
     var configAuth = require('./auth');
     const clientID = configAuth.googleAuth.clientID
     const clientSecret = configAuth.googleAuth.clientSecret
     const callbackURL = configAuth.googleAuth.callbackURL
-
+*/
 /*
     const clientID = process.env.clientID
     const clientSecret = process.env.clientSecret

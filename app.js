@@ -71,6 +71,9 @@ app.get('/dawn', (req,res) => {
   res.render('./dawn')
 })
 
+app.get('/elizabeth', (req,res) => {
+  res.render('./ElizabethBio')
+})
 
 app.get('/kevin', (req,res) => {
   res.render('./kevin')
